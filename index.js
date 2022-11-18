@@ -265,4 +265,16 @@ $(function(){
         drawStarOnResize()
       });
 
+setTimeout(function(){
+    new fullScroll({
+        mainElement: "main",
+        displayDots: true,
+        dotsPosition: "right",
+        animateTime: 0.7,
+        animateFunction: "ease",
+    });
+},8000)
+
+
+
 })

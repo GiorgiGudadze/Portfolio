@@ -12,17 +12,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./plugins/full-page-scroll.css">
 </head>
 <body class="preload">
-    <div class="container">
-        
+    <div class="filter"></div>
+    <canvas id="canvas"></canvas>
+<!-- <div class="container"> -->
+
     <header class="header">
         <div class="header__logo"></div>
         <div class="header__cnt">
             <ul class="header__ul">
-                <li><a class="header__a" href="#home">Home</a></li>
-                <li><a class="header__a" href="#section">About</a></li>
+                <li><a class="header__a" href="#0">Home</a></li>
+                <li><a class="header__a" href="#1">About</a></li>
                 <li><a class="header__a" href="#">Skills</a></li>
                 <li><a class="header__a" href="#">Projects</a></li>
                 <li><a class="header__a" href="#">Experience</a></li>
@@ -31,8 +33,24 @@
         </div>
 
     </header>
+    <div id="main" class="scroll-container">
+        
+    <!-- <header class="header">
+        <div class="header__logo"></div>
+        <div class="header__cnt">
+            <ul class="header__ul">
+                <li><a class="header__a" href="#0">Home</a></li>
+                <li><a class="header__a" href="#1">About</a></li>
+                <li><a class="header__a" href="#">Skills</a></li>
+                <li><a class="header__a" href="#">Projects</a></li>
+                <li><a class="header__a" href="#">Experience</a></li>
+                <li><a class="header__a" href="#">Contacts</a></li>
+            </ul>
+        </div>
 
-    <div class="line" id="home">
+    </header> -->
+
+    <section class="section1 line" id="home">
         <div class="homeLineWrap">
             <div class="homeLineWrap__cnt homeLineWrap__cnt1"></div>
             <div class="homeLineWrap__cnt homeLineWrap__cnt2"></div>
@@ -52,22 +70,31 @@
             <video autoplay muted loop class="homeBackground__img" src="img/bc.mp4"></video>
         </div>
 
-        <div class="filter"></div>
-        <canvas id="canvas"></canvas>
+        <!-- <div class="filter"></div>
+        <canvas id="canvas"></canvas> -->
 
-    </div>
+    </section>
 
 
-    <section class="section" id="section">
+    <section class="section2 section" id="section">
         <div class="about">
-            <div class="about__title">About me</div>
-            <div class="about__desc">&Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, aspernatur vero? Veniam odit itaque similique magnam, odio aliquam saepe quasi et cupiditate adipisci optio minima cum libero quod culpa fuga!</div>
+            
+            <div class="about__wrap">
+                <div class="about__firstCnt">
+                    <div class="about__title">About me</div>
+                    <div class="about__desc">&Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, aspernatur vero? Veniam odit itaque similique magnam, odio aliquam saepe quasi et cupiditate adipisci optio minima cum libero quod culpa fuga!</div>
+                </div>
+    
+                <div class="about__secondCnt"></div>
+            </div>
+
         </div>
     </section>
 
 
-
     </div>
+<!-- </div> -->
+    <script src="./plugins/full-page-scroll.js"></script>
     <script src="jquery-3.6.1.min.js"></script>
     <script src="index.js"></script>
 </body>
