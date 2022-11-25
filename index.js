@@ -12,6 +12,10 @@ $(function(){
             $('.intro').addClass('loaded');
             $('.homeBackground__img').addClass('loaded');
             spellLetters()
+
+            $('.trickDom').css('height',($(document).height() - 98) + 'px');
+            setCanvasSize();
+            init();
         },3500)
     }
 
@@ -173,12 +177,12 @@ $(function(){
         };
 
     
-    setCanvasSize();
-    init();
+    // setCanvasSize();
+    // init();
     
     function setCanvasSize() {
         WIDTH = document.documentElement.clientWidth,
-        HEIGHT = document.documentElement.clientHeight;                      
+        HEIGHT = $(document).height();                      
     
         canvas.setAttribute("width", WIDTH);
         canvas.setAttribute("height", HEIGHT);

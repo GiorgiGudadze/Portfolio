@@ -189,9 +189,11 @@
 					document.querySelector('.about__secondCnt').classList.add('active');
 				}
 				else{
-					document.querySelector('.about__title').classList.remove('active');
-					document.querySelector('.about__desc').classList.remove('active');
-					document.querySelector('.about__secondCnt').classList.remove('active');
+					setTimeout(function(){
+						document.querySelector('.about__title').classList.remove('active');
+						document.querySelector('.about__desc').classList.remove('active');
+						document.querySelector('.about__secondCnt').classList.remove('active');
+					},500)
 				}
 			}
 		};

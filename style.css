@@ -162,6 +162,7 @@ body{
     background: #222222;
     width: 100%;
     scroll-snap-align: start;
+    position: relative;
 }
 
 .section.loaded{
@@ -276,14 +277,10 @@ body{
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
-    transition: 1.7s;
-    transform: translateX(0);
 }
 
 .about__secondCnt.active{
     animation: rightFadeIn 1.7s both cubic-bezier(.5,0,.5,1);
-    transition: 1s;
-    animation-iteration-count: 1;
 }
 
 .about__secondCnt div{
@@ -291,8 +288,6 @@ body{
     width: 25%;
     background-color: #000;
     position: absolute;
-    transform: translateY(100%);
-    transition: 1s;
 }
 
 .about__secondCnt__b1{
@@ -313,26 +308,18 @@ body{
 
 .about__secondCnt.active .about__secondCnt__b1{
     animation: fadeUp .8s .1s both cubic-bezier(.5,0,.5,1);
-    transition: 1s;
-    animation-iteration-count: 1;
 }
 
 .about__secondCnt.active .about__secondCnt__b2{
     animation: fadeUp .9s .3s both cubic-bezier(.5,0,.5,1);
-    transition: 1s;
-    animation-iteration-count: 1;
 }
 
 .about__secondCnt.active .about__secondCnt__b3{
     animation: fadeUp .94s .4s both cubic-bezier(.5,0,.5,1);
-    transition: 1s;
-    animation-iteration-count: 1;
 }
 
 .about__secondCnt.active .about__secondCnt__b4{
     animation: fadeUp .99s .5s both cubic-bezier(.5,0,.5,1);
-    transition: 1s;
-    animation-iteration-count: 1;
 }
 
 .about__wrap{
@@ -353,11 +340,21 @@ body{
 
 #canvas{
     position: absolute;
-    top: 0;
+    top: -98px;
     left: 0;
-    /* width: 100%;
-    height: 100%; */
-    z-index: 0;
+    /* width: 100%; */
+    height: 100%;
+    z-index: 3;
+}
+.trickDom{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.section2 #canvas{
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
 
 @keyframes colorChange {
